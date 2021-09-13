@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <title>Bulls Eye</title>
+  <head>
+        <script src="bullsEye.js"></script>
+ </head>
+
+  <canvas id="testCanvas" style="border: 1px solid;"  width="400" height="400"> 
+  </canvas>
+  <p></p>
+  <label for="band">BandWidth:</label>
+  <input type="range" id="band" min="5" max="50" step="5" value="25"
+        oninput="bullsEyeModule.drawPattern()">
+  <p>Current Band Width: <output id="widthDisplay"></output></p>
+
+  <label for="delay">Delay:</label>
+  <input type="checkbox" id="delay"
+        onclick="bullsEyeModule.drawPattern()">
+
+
+</html>

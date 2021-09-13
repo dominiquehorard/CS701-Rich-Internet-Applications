@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rolling Ball</title>
+        <meta charset="utf-8">
+        <script src="animation.js"></script>
+        <link rel="stylesheet" href="html5.css">
+    </head>
+    <body>
+          <h3>Magic Rolling Ball - Dom Horard</h3>
+
+         <canvas id="testCanvas" width="405" height="405"> </canvas>
+         <p>
+         <label for="speed">Ball Speed:</label>
+		  <input type="range" id="speed" min="1" max="20" step="1" value="5"
+		        oninput="animModule.setSpeed(this.value);speedDisplay.value=this.value;">
+		  <p>Current Speed: <output id="speedDisplay">5</output></p>
+    </body>
+</html>
