@@ -1,0 +1,31 @@
+<table>
+    <caption><b>My Books</b></caption>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Qty</th>
+        <th>UnitPrice</th>
+        <th>$UnitPrice</th>
+        <th>Line Total</th>
+        <th>Total {{$ctrl.updateTotal() | currency}} </th>
+    </tr>
+    </thead>
+    <tbody ng-repeat="book in $ctrl.defaultBooks">
+    <tr>
+        <td><input type="text" ng-model="book.title" value="{{$ctrl.book.title}}"></td>
+        <td><input type="text" ng-model="book.qty" value="{{book.qty}}"></td>
+        <td><input type="text" ng-model="book.price" value="{{book.price}}"></td>
+        <td>{{book.price | currency}}</td>
+        <td ng-model="book.linePrice">{{book.price * book.qty | currency}}</td>
+        <td><button ng-click="$ctrl.removeBook($index)">Remove</button></td>
+    </tr>
+    </tbody>
+    <tr>
+        <th colspan="3">
+            <button ng-click="$ctrl.addBook()">New </button>
+        </th>
+        <th colspan="3">
+            <button ng-click="$ctrl.saveBooks()">Save </button>
+        </th>
+    </tr>
+</table>

@@ -1,0 +1,45 @@
+<senators>
+	
+	<senator>
+		<name>Chuck Schumer</name>
+		<party>Democrat</party>
+	</senator>
+	<senator>
+		<name>Mark Kelly</name>
+		<party>Democrat</party>
+	</senator>
+	<senator>
+		<name>Patrick Leahy</name>
+		<party>Democrat</party>
+	</senator>
+	<senator>
+		<name>Jeanne Shaheen</name>
+		<party>Democrat</party>
+	</senator>
+	<senator>
+		<name>Elizabeth Warren</name>
+		<party>Democrat</party>
+	</senator>
+	
+	<senator>
+		<name>Mitch McConnell</name>
+		<party>Republican</party>
+	</senator>
+	<senator>
+		<name>Marco Rubio</name>
+		<party>Republican</party>
+	</senator>
+	<senator>
+		<name>Mitt Romney</name>
+		<party>Republican</party>
+	</senator>
+	<senator>
+		<name>Rand Paul</name>
+		<party>Republican</party>
+	</senator>
+	<senator>
+		<name>Roy Blunt</name>
+		<party>Republican</party>
+	</senator>
+
+</senators>

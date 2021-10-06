@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Worker Sample</title>
+        <meta charset="utf-8">
+        <script src="part3.js"></script>
+        <link rel="stylesheet" href="../html5.css">
+    </head>
+    <body>
+      <header>
+        <h2>Part3</h2>
+      </header>
+  
+        <section>
+            <article>
+                Range: 1 -    <input type="number" id="range" value="500">
+                <p></p>
+                 # of Workers: <input type="number" id="numWorkers" value="5">
+                <p></p>
+                <button id="startButton">Start Workers</button>
+                <p></p>
+
+                <b>Accumulated Result: </b><output id="sum">0</output>
+
+                <h3>Received Messages</h3>
+               
+                <ul id="items">
+
+                </ul>
+
+                <p></p>
+                <h3>Local Storage</h3>
+               
+                <ul id="storageItems">
+
+                </ul>
+
+            </article>
+        </section>
+    </body>
+</html>

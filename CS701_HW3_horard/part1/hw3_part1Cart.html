@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang='en' ng-app="myApp">
+  <head>
+   <title>Book Shopping Cart</title>
+
+  <script src="../js/angular182.js"></script>
+  <script src="hw3_part1Controller.js"></script>
+  <link rel="stylesheet" href="../css/hw3.css">
+  </head>
+
+  <body ng-controller="CartControler" ng-init="updateTotal()">
+
+    <table>
+      <caption><b>My Books</b></caption>
+      <thead>
+        <tr>
+            <th>Title</th>
+            <th>Qty</th>
+            <th>UnitPrice</th>
+            <th>$UnitPrice</th>
+            <th>Line Total</th>
+            <!--total has to be the sum of all the book totals displayed here-->
+            <!--calling the function that returns the price by the quantity-->
+            <!--using the currency filter-->
+            <th>Total {{updateTotal() | currency}}</th>
+        </tr>
+      </thead>
+      <!--calling the ng-repeat method and iterating over the array-->
+      <tbody ng-repeat="book in defaultBooks">
+        <!-- Add Code for the table rows-->
+        <tr>
+            <!--making input element with the value being the book's title-->
+            <td><input type="text" ng-model="book.title" value="{{book.title}}"></td>
+            <!--book quantity element-->
+            <td><input type="text" ng-model="book.qty" value="{{book.qty}}"></td>
+            <!--book price edit input-->
+            <td><input type="text" ng-model="book.price" value="{{book.price}}"></td>
+            <!--book price row-->
+            <td>{{book.price | currency}}</td>
+            <!--multiplying the set price by the quantity wanted and setting that as the total price for the book-->
+            <td ng-model="book.linePrice">{{book.price * book.qty | currency}}</td>
+            <!--the remove button that is -->
+            <!--ng click calls the removeBook function with the assigned index-->
+            <td><button ng-click="removeBook($index)">Remove</button></td>
+        </tr>
+      </tbody>
+        <tr><th colspan="3"><button ng-click="addBook()">
+            New
+        </button></th>
+            <th colspan="3"><button ng-click="saveBooks()">
+                Save
+            </button></th>
+
+        </tr>
+    </table>
+  </body>
+</html>
+
+

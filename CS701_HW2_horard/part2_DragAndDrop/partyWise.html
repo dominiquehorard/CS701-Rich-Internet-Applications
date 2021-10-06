@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Democrats/Republicans</title>
+        <meta charset="utf-8">
+        <script src="partyWise.js"></script>
+        <link rel="stylesheet" href="../html5.css">
+        
+        <style type="text/css">
+            .dropList {
+                display: table-cell;
+                width: 400px;
+            }
+            ul {
+                padding-left: 30px;
+            }
+            #democrats, #republicans {
+                height: 150px;
+            }
+            #members li {
+                cursor: move;
+            }
+            .highlightedDemocrats {
+                background-color: blue;
+            }
+            .democrat {
+              color: blue;
+            }
+            .highlightedRepublicans {
+                background-color: red;
+            }
+            .republican {
+              color: red;
+            }
+            .dragged {opacity: 0.5;}
+        </style>
+        
+    </head>
+    <body>
+      <header>
+      </header>
+
+ <section>
+      <article>
+        <h2>Time to Vote</h2>
+
+         <p>Drag members to either the Democrats or Republicans list.</p>
+
+          <!--INSERT MEMBERS HERE-->
+         <ul id="members">
+          
+         </ul>
+
+         <div id="dropLists" style="display: table">
+         <div style="display: table-row">
+
+         <!--DROPLIST FOR DEMS-->
+         <div class="dropList">
+            <fieldset>
+                <legend>Democrats:</legend>
+                <ul id="democrats">
+                    
+                </ul>
+            </fieldset>
+         </div>
+
+         <!--DROPLIST FOR REPS-->
+         <div class="dropList">
+            <fieldset>
+                <legend>Republicans:</legend>
+                <ul id="republicans">
+                    
+                </ul>
+            </fieldset>
+         </div>
+
+         </div>
+         </div>
+         <!--MESSAGE THAT NEEDS TO BE CHANGED-->
+         <p id="msg">Drop over the respective targets</p>
+      </article>
+    </section>
+    
+  </body>
+</html>
