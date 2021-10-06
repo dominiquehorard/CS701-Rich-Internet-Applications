@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SVG</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="html5.css">
+    </head>
+
+    <body>
+
+        <svg width="500" height="500">
+          
+          
+          <defs>
+              <g id="stopSign">
+                <ellipse cx="0" cy="0" rx="50" ry="50" 
+                  stroke="#000000" stroke-width="2" fill="#FFC0CB"> 
+                </ellipse>
+                <ellipse cx="0" cy="55" rx="5" ry="5" 
+                    fill="#FF0000"> 
+                </ellipse>
+                <ellipse cx="0" cy="-55" rx="5" ry="5" 
+                    fill="#0000FF"> 
+                </ellipse>
+                  <text x=-30 y=5 font-family="san-serif" 
+                      font-size="24px" fill="#00000">
+                          Suresh
+                  </text>
+              </g>
+          </defs>
+
+          <line x1="0" y1="250" x2="500" y2="250" stroke="#000000"></line>
+          <line x1="250" y1="0" x2="250" y2="500" stroke="#000000"></line>
+
+            <!-- Fill in the code for the four animations-->
+              
+          <g transform="translate(195, 195)">
+            <use xlink:href="#stopSign">
+            </use>
+          </g>  
+
+         
+        </svg>
+
+        
+
+    </body>
+</html>
